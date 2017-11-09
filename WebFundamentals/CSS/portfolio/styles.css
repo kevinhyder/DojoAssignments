@@ -1,0 +1,138 @@
+* {
+    /*border: 1px dashed red;*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 970px;
+    background-color: #f7f7f7;
+}
+
+header {
+    padding: 10px;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 20px;
+    font-family: "Comic Sans MS"
+}
+
+header p {
+    display: inline;
+    float: right;
+    margin: 5px;
+    font-size: 20px;
+    font-family: "Helvetica";
+    font-weight: bold;
+    
+}
+
+main {
+    background: radial-gradient(#674e59, #3d2730)
+}
+
+main > img {
+    width: 45%;
+    margin: 20px 10px 20px 10px;
+    background-color: #ede6eb;    
+    padding: 5px;
+}
+
+#about {
+    position: absolute;
+    display: inline-block;
+    background-color: #ede6eb;
+    margin: 20px 20px 20px 10px;
+    width: 475px;
+    height: 297px;
+}
+
+.section h2 {   
+    height: 30px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.section h3 {
+    padding: 10px;
+}
+
+.section h4 {
+    padding: 5px;
+}
+.section {
+    background: linear-gradient(#B7B7BA, #878593, #A9A9AE)
+}
+
+.info {
+    background: #ede6eb;
+}
+.info p, a {
+    display: block;
+    margin: 10px;
+    padding-top: 10px;
+}
+.info a {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#projects {
+    height: 550px;
+}
+
+.project {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.project img {
+    width: 300px;
+}
+
+.project:first-child {
+    margin-left: 10px;
+}
+
+.description {
+    background: #ede6eb;
+    font-size: 14px;
+    line-height: 1.3em;
+    height: 160px;
+    padding: 10px;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.technology img {
+    width: 40px;
+    padding: 4px;
+    margin-left: 5px;
+}
+
+h2, h3, h4 {
+    color: white;
+    font-weight: 300;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+footer img {
+vertical-align: bottom;     
+width: 20px;
+margin-top: 10px;
+}
+
+footer a {
+    display: inline;
+    font-style: oblique; 
+    margin: 2px; 
+    padding: 2px;  
+}
