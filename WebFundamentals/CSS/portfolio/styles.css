@@ -35,8 +35,8 @@ main {
 }
 
 main > img {
-    width: 45%;
-    margin: 20px 10px 20px 10px;
+    width: 40%;
+    margin: 20px 10px 20px 20px;
     background-color: #ede6eb;    
     padding: 5px;
 }
@@ -46,8 +46,7 @@ main > img {
     display: inline-block;
     background-color: #ede6eb;
     margin: 20px 20px 20px 10px;
-    width: 475px;
-    height: 297px;
+    width: 510px;
 }
 
 .section h2 {   
@@ -73,15 +72,16 @@ main > img {
 .info p, a {
     display: block;
     margin: 10px;
-    padding-top: 10px;
+    padding-top: 4px;
 }
 .info a {
     margin-top: 20px;
+    margin-bottom: 29px;
     font-size: 16px;
 }
 
 #projects {
-    height: 550px;
+    height: 600px;
 }
 
 .project {
@@ -96,7 +96,7 @@ main > img {
 }
 
 .project:first-child {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .description {
@@ -106,13 +106,13 @@ main > img {
     height: 160px;
     padding: 10px;
     margin-top: 0px;
-    text-align: justify;
+    text-align: justify; 
 }
 
 .technology img {
     width: 40px;
     padding: 4px;
-    margin-left: 5px;
+    margin-left: 5px;   
 }
 
 h2, h3, h4 {
@@ -136,3 +136,12 @@ footer a {
     margin: 2px; 
     padding: 2px;  
 }
+
+button {
+    height: 30px;
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
