@@ -12,18 +12,28 @@ body {
     background-color: white;
 }
 
+header img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
 #title {
     position: relative;
     left: 80px;
     font-size: 32pt;
     font-weight: normal;
     padding-top: 15px;
+    padding-left: 5px;
 }
 
 #title span {
     color: #467ba9;
     font-weight: normal;
 }
+
 
 #sub-title {
     color: white;
@@ -35,11 +45,48 @@ body {
 }
 
 #sub-header {
+    position: absolute;
+    right: 0px;
     width: 640px;
 }
 
 #sub-header > p {
+    position: absolute;
+    top: 4px;
     font-size: 10pt;
     font-weight: bold;
     color: #467ba9;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sub-header img {
+    height: 20px;
+}
+#phone {
+    position: absolute;
+    right: 5px;
+
+    display: inline-block;  
+}
+
+#phone img {
+    display: inline-block;
+    position: absolute;
+    right: 140px;
+    top: 4px;
+    margin-right: 0;
+    height: 40px;
+}
+
+.call-info {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 7pt; 
+}
+
+#number {
+    color: #02c0df;
+    font-size: 16pt;
+    font-weight: bold;
 }
