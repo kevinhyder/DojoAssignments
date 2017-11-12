@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dashed red;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter; 
+}
+
+body {
+    width: 970px;
+    height: auto;
+    background-color: white;
+}
+
+#title {
+    position: relative;
+    left: 80px;
+    font-size: 32pt;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+#title span {
+    color: #467ba9;
+    font-weight: normal;
+}
+
+#sub-title {
+    color: white;
+    font-size: 22pt;
+    background-color: #467ba9;
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 20px;
+}
+
+#sub-header {
+    width: 640px;
+}
+
+#sub-header > p {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #467ba9;
+}
