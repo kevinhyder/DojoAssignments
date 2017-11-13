@@ -1,15 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px dashed red;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter; 
+}
+
+a {
+    text-decoration: none;
+    color: #44cadf;
+    font-weight: bolder;
 }
 
 body {
     width: 970px;
     height: auto;
     background-color: white;
+}
+
+#wrapper {
+    width: 970px;
 }
 
 header img {
@@ -34,7 +43,6 @@ header img {
     font-weight: normal;
 }
 
-
 #sub-title {
     color: white;
     font-size: 22pt;
@@ -44,10 +52,97 @@ header img {
     padding-left: 20px;
 }
 
-#sub-header {
+#sidebar {
     position: absolute;
-    right: 0px;
-    width: 640px;
+    width: 200px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#side-title {
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 20px 5px 10px 0;
+    text-align: left;
+}
+
+#side-title span {
+    color: red;
+    font-weight: bold;
+}
+
+#side-desc {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+#side-desc span {
+    color: #467ba9;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    font-size: 9pt;
+    font-weight: bolder;
+    height: 30px;
+    width: 160px;
+    /*margin: 5px;*/
+    border-radius: 5px;
+}
+
+#videos {
+    background-color: #467ba9;
+}
+
+#resources {
+    background-color: #ee8500;
+}
+
+#sidebar hr {
+    margin: 20px 0;
+}
+
+#sidebar img {
+    width: 180px;
+}
+
+#ad {
+    text-align: center;
+}
+
+#ad p {
+    color: white;
+    font-size: 14pt;
+    width: 140px;
+    position: relative;
+    left: 30px;
+    bottom: 250px;
+}
+
+#ad #ninja {
+    width: 80px;
+    position: relative;
+    bottom: 250px;
+}
+
+#learn {
+    background-color: #44cadf;
+    position: relative;
+    bottom: 240px;
+}
+
+#sub-header {
+    height: 65px;
+    position: relative;
+    padding-top: 10px;
+    right: 5px;
+    left: 250px;
+    width: 720px;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 #sub-header > p {
@@ -63,6 +158,7 @@ header img {
 #sub-header img {
     height: 20px;
 }
+
 #phone {
     position: absolute;
     right: 5px;
@@ -89,4 +185,64 @@ header img {
     color: #02c0df;
     font-size: 16pt;
     font-weight: bold;
+}
+
+#main-content {
+    position: absolute;
+    top: 80px;
+}
+
+.title {
+    color: #467ba9;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#main-content span {
+    font-weight: bold;
+}
+
+#main-content ul, ol {
+    font-size: 11pt;
+    position: relative;
+    margin-left: 40px;
+    padding: 10px 0px;
+}
+
+#main-content li {
+    padding-bottom: 10px;
+}
+
+#main-content > img {
+    position: relative;
+    width: 250px;
+    height: auto;
+    left: 240px;
+}
+
+#big-3 {
+    height: 150px;
+    border: 3px solid #467ba9;
+}
+
+#big-3 img {
+    padding: 10px 5px 0 10px;
+    display: inline-block;
+    height: 100px;
+    width: auto;
+}
+
+#big-3-text {
+    position: relative;
+    left: 120px;
+    bottom: 115px;
+    display: inline-block;
+    width: 590px;
+    margin-right: 10px;
+}
+
+#big-3 p {
+    display: inline-block;
+    padding: 5px;
 }
