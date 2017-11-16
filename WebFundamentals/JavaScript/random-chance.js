@@ -1,26 +1,24 @@
 function randomChance(quarters) {
+    
+        var win = Math.floor((Math.random() * 100 ) + 1);
+        var winnings = Math.floor((Math.random() * 50 ) + 51);
+        var loss = "You have no quarters left!";
 
-    for( var i = quarters; i > 0; i-- ) {
-        var win = Math.floor( (Math.random() * 100 ) + 1);
-        var winnings = Math.floor(Math.random() * 50 ) + 51;
-        var loss = 0;
-
+        if(quarters == 0) {
+            console.log(loss)
+            return loss;
+        }
         while(quarters > 0) {
-            if( win == 1 ) {
-                quarters = quarters + winnings;
+            if( win == 100 ) {
+                quarters--;
+                quarters += winnings;
                 console.log(quarters)
-                return quarters
-                
+                return quarters;    
             }
             else {
-                quarters--
+                quarters--;
+                console.log("You have", quarters, "quarters left.")
             }
         }
-        if( quarters == 0 ) {
-            console.log(loss)
-            return loss
-            
-        }
-    }
 }
-randomChance(50)
+randomChance(100)
