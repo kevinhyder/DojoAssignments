@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px dashed red;
 }
 
 html {
@@ -35,8 +34,8 @@ button {
     vertical-align: top;
     width: 300px;
     height: 300px;
-    margin: 5px 5px 5px 5px;
-    border: 1px solid rgb(41, 128, 185);
+    margin: 5px;
+    border: 2px solid rgb(41, 128, 185);
 }
 
 .section p { 
@@ -51,10 +50,47 @@ button {
     margin: 10px 0 20px 0;
 }
 
-.arguments {
-    font-size: 9pt;
+.display-none {
+    display: none;
 }
 
-#slide-down-p {
-    display: none;
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: rgb(192, 57, 43);
+}
+
+#after {
+    position: relative;
+    top: 18px;
+}
+
+#before {
+    position: relative;
+    top: 6px;
+}
+
+#html {
+    position: relative;
+    top: 41px;
+}
+#html-desc {
+    padding: 0 5px;
+}
+
+#html-desc p {
+    padding: 5px 0;
+    margin-top: 0;
+}
+
+#html-p {
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#val-p {
+    margin-bottom: 2px;
 }
