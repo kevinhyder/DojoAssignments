@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dashed red;
+}
+
+html {
+    width: 970px;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    font-size: 14pt;
+    background-color: green;
+    margin: 10px 0;
+}
+
+.section {
+    display: inline-block;
+    margin: 5px;
+    width: 225px;
+    height: 225px;
+}
