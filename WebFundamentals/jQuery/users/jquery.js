@@ -4,12 +4,12 @@ $(document).ready(function(){
             $("form").submit()
         });
         $("form").on("submit", function(){
-            var htmlString = "<tr>";
+            var str = "<tr>";
             $("input").each(function(){
-                htmlString += "<td>" + $(this).val() + "</td>"
+                str += "<td>" + $(this).val() + "</td>";
             });
-            htmlString += "</tr>"
-            $("tbody").append(htmlString);
+            str += "</tr>";
+            $("tbody").append(str);
             return false;
         });
-    });
+});
