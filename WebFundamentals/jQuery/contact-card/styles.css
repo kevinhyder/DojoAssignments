@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dashed red;
+}
+
+html {
+    width: 970px;
+}
+
+body {
+    width: 970px;
+}
+
+form h4 {
+    margin: 20px;
+}
+
+button {
+    font-size: 12pt;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    left: 20px;
+    box-shadow: 5px 5px 3px #888888;
+}
+#left-side {
+    display: inline-block;
+    width: 475px;
+}
+
+#right-side {
+    display: inline-block;
+    width: 475px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+#last-name {
+    position: relative;
+    left: 2px;
+}
+#desc {
+    margin-top: 30px;
+}
+
+#desc p{
+    vertical-align: top;
+}
+
+#desc-ta {
+    vertical-align: top;
+    width: 300px;
+    height: 100px;
+}
