@@ -1,0 +1,32 @@
+body {
+    width: 970px;
+    text-transform: capitalize;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;      
+}
+
+h3 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#poke-images {
+    display: inline-block;
+    width: 610px;
+    text-align: center;
+}
+
+#poke-data {
+    position: fixed;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width:350px;
+    min-height: 455px;
+    height: auto;
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
