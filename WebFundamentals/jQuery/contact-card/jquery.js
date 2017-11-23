@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Append the Contact Card
     $(document).on('click', '.btn', function(){
         var firstName = $('#first-name').val();
         var lastName = $('#last-name').val();
@@ -11,9 +12,13 @@ $(document).ready(function(){
         };
         var personStr = JSON.stringify(person);
         $('#right-side').append('<div class="contact-card"' + ' data-person=' + "'" + personStr + "'" + '>' + '<h1>' + fullName + '</h1>' + clickForDesc + '</div>');
-        return false;   
+        // Clear form fields after submit
+        $('form')[0].reset();
+        
+        return false;
+        
     });
-
+    // Display the alt data on click
     $(document).on('click', '.contact-card', function(){
         var person = $(this).data('person');
         var name = '<h1>' + person.full_name + '</h1>';
