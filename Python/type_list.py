@@ -14,10 +14,13 @@ def type_list(list):
     if len(total_string) > 0:
         print "String:", total_string
     if len(types) == 1:
-        print "This list is of", types[0], "type."
-    if len(types) > 1:
+        typeStr = "string"
+        if types[0] is int:
+            typeStr = "integer"
+        if types[0] is float:
+            typeStr = "float"
+        if types[0] is list:
+            typeStr = "list"
+        print "This list is of", typeStr, "type."
+    else:
         print "This list is of mixed types." 
-
-l = [98.98]
-
-type_list(l)
