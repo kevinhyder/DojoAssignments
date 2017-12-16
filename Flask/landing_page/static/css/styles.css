@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+body {
+    width: 960px;
+    align-content: center;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrapper {
+    padding-left: 6px;
+    width: 948px;
+    height: auto;
+    text-align: center;
+}
+
+.section {
+    margin: 10px;
+}
