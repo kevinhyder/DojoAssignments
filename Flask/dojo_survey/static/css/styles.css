@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    text-align: center;
+    width: 960px;   
+}
+h1 {
+    padding-left: 10px;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+span {
+    margin-left: 20px
+}
+
+.wrapper {
+    margin-left: 6px;
+    width: 948px;
+}
+.section {
+    padding: 10px;
+    text-align: left;
+}
+
+.btn {
+    text-align: center;
+    margin-left: 218px;
+}
+#comment-label {
+    vertical-align: top;
+}
