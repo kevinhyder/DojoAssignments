@@ -10,11 +10,13 @@ def main():
         session['count'] = 1
     return render_template('index.html')
 
+@app.route('/bytwo', methods = ["POST"])
 def by_2():
-    session['counter'] += 2
-    return render_template('index.html')
+    session['count'] += 1
+    return redirect('/')
 
+@app.route('/reset',methods = ["POST"])
 def reset():
-    session['counter'] = 1
-    return render_template('index.html')
+    session['count'] = 0
+    return redirect('/')
 app.run(debug=True)
