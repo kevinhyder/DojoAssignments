@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="your_gold">
+            <h2>Your Gold: {{ session['your_gold'] }}</h2>
+        </div>
+        <div id="boxes">
+            <div class="box" id="farm">
+                <h3>Farm</h3><h4>(earns 10-20 gold)</h4>
+                <form action="/working" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input class="btn" type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="box" id="cave"><h3>Cave</h3><h4>(earns 5-10 gold)</h4>
+                <form action="/working" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input class="btn" type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="box" id="house"><h3>House</h3><h4>(earns 2-5 gold)</h4>
+                <form action="/working" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input class="btn" type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div class="box" id="casino"><h3>Casino</h3><h4>(earns/takes 0-50 gold)</h4>
+                <form action="/working" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input class="btn" type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <a href='/reset'><input type="submit" value='Reset'></a>
+        </div>
+        <div id="activities">
+            <h5>Activities:</h5>
+            <div id="activity-list">
+                {% for activity in session['activities'] %}
+                    {% if 'lost' in activity or 'must' in activity %}
+                        <p class='red'>{% print activity %}</p>
+                    {% else %}
+                        <p class='green'>{% print activity %}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
